@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100');
+
+body {
+    margin: 0px;
+    user-select: none;
+}
+.page {
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    min-width: 350px;
+    width: 60%;
+    margin: 100px auto;
+}
+.header {
+    border-radius: 5px 5px 0px 0px;
+    background: #293fe2;
+    color: white;
+    padding: 20px;
+}
+.infos {
+    float: right;
+    margin-top: 0px;
+    line-height: 0.5;
+    text-align: right;
+}
+.infos .unite {
+    display: inline;
+    font-size: 12px;
+    vertical-align: top;
+    margin-left: 5px;
+}
+.content {
+    padding: 20px;
+}
+.content .bouton {
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    height: 110px;
+    width: 110px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+    line-height: 0.5;
+    text-decoration: none;
+    color: black;
+}
+.content .bouton:hover {
+    box-shadow: 0px 3px 10px gray;
+}
+.content .bouton img {
+    width: 40%;
+}
+.icon-error {
+    fill: #cb1a1a;
+    width: 100px;
+    display: center;
+}
+.icon-success {
+    fill: #2ecc71;
+    width: 100px;
+    display: center;
+}
+.title {
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.details {
+    font-weight: 300;
+    line-height: normal;   
+    font-family: 'Roboto', sans-serif;
+    text-align: inherit;
+    width: 100%;
+    margin: 5px auto;
+}
+.content .bouton p {
+    font-size: 13px;
+    color: #787878;
+    line-height: 1;
+}
+.footer {
+    border-radius: 0px 0px 5px 5px;
+    background: #141b4d;
+    font-size: 13px;
+    color: white;
+    padding: 20px;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+.btn-retour:before {
+    content: 'Accueil';
+    display: inline-block;
+    border: 1px solid #008cdb;
+    color: #008cdb;
+    padding: 15px 41px;
+    width: 150px;
+    text-align: center;
+    background: linear-gradient(to left, rgb(255, 255, 255) 50%, #008cdb 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    vertical-align: middle;
+  transition:all 0.5s ease;
+}
+.btn-retour:hover:before {
+    content: 'Accueil';
+    color: white;
+    text-align: center;
+    background-position:left bottom;
+    transition:all 0.5s ease;
+}
+.id {
+    color: gray;
+}
+.logo {
+    display: block;
+    margin: auto;
+}
+@media (max-width:750px) {
+    .page {
+        width: 90%;
+        margin: 50px auto;
+    }
+}
+@media (max-width:500px) {
+    .page {
+        width: 98%;
+        margin: 10px auto;
+    }
+}
