@@ -10,9 +10,14 @@ if(isset($_POST['generer'])){
     $_SESSION['token_gen'] = time();
     if ($utilisateur['grade'] == 1) {
         if(isset($_POST['linkvert'])){
+            $_SESSION['token_lv'] = random_bytes(5);
+            header('Location: '.$_POST['linkvert']);
+            
+        }else{
+            $token_exeio = 'f51c876d101a37b842ceaeafe6a6702b41e3bffd';
             $genid = htmlspecialchars($_POST['generer']);
-            $aprespub = '/captcha?id='.$genid;
-            $url = '&url='.$aprespub;
+            $aprespub = 'https://freegen.freemembersplus.fr/captcha?id='.$genid;
+            $url = 'https://exe.io/api='.$token_exeio.'&url='.$aprespub;
             header('Location: '.$url);
         }
     } else {
