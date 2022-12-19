@@ -247,7 +247,7 @@ INSERT INTO `parametres` (`nom`, `valeur`, `date_time`) VALUES
 ('generations_non_vip', '25', '2020-05-14 01:30:00'),
 ('generations_StarterPro', '50', '2020-05-14 19:23:05'),
 ('generations_totales', '0', '2020-04-21 00:00:00'),
-('inscription', '0', '2020-05-21 11:46:07'),
+('inscription', '1', '2020-05-21 11:46:07'),
 ('limite_comptes_nonvip', '1', '2022-11-08 10:59:50'),
 ('maintenance', '0', '2020-05-21 18:02:58');
 
